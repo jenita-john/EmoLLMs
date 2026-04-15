@@ -129,7 +129,20 @@ import torch
 ## Comparison with ChatGPT (Latest Version)
 
 ### Experimental Comparison Framework
-*Space for ChatGPT experimental results to be added*
+
+#### ChatGPT GPT-5 Experimental Results
+
+**Sentiment Strength Task**:
+- **Text**: "Happy Birthday shorty. Stay fine stay breezy stay wavy @daviistuart ð"
+- **Task**: Evaluate valence intensity (0 = most negative, 1 = most positive)
+- **ChatGPT Output**: `0.91`
+- **EmoLLMs Comparison**: `0.879` (from original experiments)
+
+**Sentiment Classification Task**:
+- **Text**: "Beyoncé resentment gets me in my feelings every time. ð©"
+- **Task**: Ordinal classification (-3 to +3 scale)
+- **ChatGPT Output**: `-1` (slightly negative)
+- **EmoLLMs Comparison**: `-2` (moderately negative)
 
 ### Comparative Analysis Framework
 **Metrics to Compare:**
@@ -139,14 +152,17 @@ import torch
 - Response coherence and relevance
 - Handling of ambiguous or mixed emotions
 
+**Initial Observations:**
+1. **Sentiment Strength**: ChatGPT (0.91) vs EmoLLMs (0.879) - ChatGPT shows slightly higher positive intensity
+2. **Sentiment Classification**: ChatGPT (-1) vs EmoLLMs (-2) - ChatGPT less severe in negative classification
+3. **Response Format**: ChatGPT provides direct numerical outputs, EmoLLMs includes explanatory text
+
 **Expected Areas of Comparison:**
 1. **Task Performance**: Accuracy across different emotion tasks
 2. **Response Quality**: Coherence and relevance of outputs
 3. **Specialization**: Domain-specific knowledge vs general capability
 4. **Consistency**: Reliability across similar inputs
 5. **Speed**: Inference time and computational efficiency
-
-*ChatGPT experimental results to be documented here*
 
 ## Technical Implementation Details
 
