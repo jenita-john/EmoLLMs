@@ -1,5 +1,8 @@
 # EmoLLMs: Experimental Analysis and Implementation
 
+**Project Members**: Jenita John, Nujaimah Ahmed, Farah Taher  
+**Emails**: jjohnpau@torontomu.ca, nujaimah.ahmed@torontomu.ca
+
 ## Project Overview
 
 This project contains my experimental work with the **EmoLLMs** paper and codebase as part of my Master's degree in NLP. EmoLLMs are a series of Emotional Large Language Models designed for comprehensive affective analysis, including emotion detection, sentiment classification, and emotion intensity scoring.
