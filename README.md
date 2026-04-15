@@ -271,12 +271,4 @@ The following structured report format is provided in `EmoLLMs.ipynb` following 
 5. **Conclusion and Future Direction** - Learnings, limitations, future extensions
 6. **References** - Academic citations
 
-### Current Status:
-- **Completed**: Introduction section with problem analysis
-- **To Fill**: Background table with related work comparisons
-- **To Fill**: Methodology details with specific implementation
-- **To Fill**: Implementation code cells
-- **To Fill**: Conclusion with personal learnings
-- **To Fill**: References section
-
 **Note**: This README documents our experimental work and learnings as part of our Master's degree research in Natural Language Processing. The comparison with ChatGPT results will be updated as experiments are completed.
