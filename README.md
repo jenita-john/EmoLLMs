@@ -5,7 +5,7 @@
 
 ## Project Overview
 
-This project contains my experimental work with the **EmoLLMs** paper and codebase as part of my Master's degree in NLP. EmoLLMs are a series of Emotional Large Language Models designed for comprehensive affective analysis, including emotion detection, sentiment classification, and emotion intensity scoring.
+This project contains our experimental work with the **EmoLLMs** paper and codebase as part of our Master's degree in NLP. EmoLLMs are a series of Emotional Large Language Models designed for comprehensive affective analysis, including emotion detection, sentiment classification, and emotion intensity scoring.
 
 ## Original Research
 
@@ -279,4 +279,4 @@ The following structured report format is provided in `EmoLLMs.ipynb` following 
 - **To Fill**: Conclusion with personal learnings
 - **To Fill**: References section
 
-**Note**: This README documents my experimental work and learnings as part of my Master's degree research in Natural Language Processing. The comparison with ChatGPT results will be updated as experiments are completed.
+**Note**: This README documents our experimental work and learnings as part of our Master's degree research in Natural Language Processing. The comparison with ChatGPT results will be updated as experiments are completed.
