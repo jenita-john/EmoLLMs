@@ -102,13 +102,6 @@ import torch
 
 **Analysis**: Consistent high-intensity scores for emotionally explicit texts.
 
-## Key Learnings
-
-### 1. Model Architecture Insights
-- **T5-based models** (Emot5-large) show strong performance on structured emotion tasks
-- **Encoder-decoder architecture** provides better control for classification tasks
-- **Instruction tuning** significantly improves task adherence
-
 ## Architecture Overview
 
 The EmoLLMs system follows a comprehensive pipeline for affective analysis:
@@ -150,18 +143,20 @@ The EmoLLMs system follows a comprehensive pipeline for affective analysis:
 
 *Figure: Comprehensive pipeline showing data flow from SemEval-2018 raw data through AAID instruction dataset, multi-task instruction tuning, Affective Evaluation Benchmark (AEB), and comparison with baseline models.*
 
-### 2. Prompt Engineering Criticality
+## Key Learnings
+
+### 1. Prompt Engineering Criticality
 - Precise task descriptions are essential for accurate outputs
 - Consistent formatting improves model reliability
 - Multi-emotion detection requires careful prompt design
 
-### 3. Strengths of EmoLLMs
+### 2. Strengths of EmoLLMs
 - **Specialized training** on affective data provides domain expertise
 - **Multi-task capability** handles classification, regression, and detection
 - **Fine-grained emotion understanding** beyond basic sentiment
 - **Numerical intensity scoring** provides quantitative emotion analysis
 
-### 4. Limitations Observed
+### 3. Limitations Observed
 - **Context dependency** - performance varies with text complexity
 - **Emotion overlap** - sometimes struggles with ambiguous emotional content
 - **Cultural nuances** - may miss culturally specific emotional expressions
