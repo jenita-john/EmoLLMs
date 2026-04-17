@@ -109,6 +109,47 @@ import torch
 - **Encoder-decoder architecture** provides better control for classification tasks
 - **Instruction tuning** significantly improves task adherence
 
+## Architecture Overview
+
+The EmoLLMs system follows a comprehensive pipeline for affective analysis:
+
+### 1. Data Source
+- **SemEval-2018 Task 1: Affect in Tweets (raw data)** - Initial raw data source for training and evaluation
+
+### 2. Instruction Dataset
+- **AAID - Affective Analysis Instruction Dataset (234K samples)** - Derived from raw data for instruction tuning
+  - **EI-reg** (Emotion intensity regression)
+  - **EI-oc** (Emotion ordinal classification)  
+  - **V-reg** (Sentiment strength regression)
+  - **V-oc** (Sentiment ordinal classification)
+  - **E-c** (Multi-label emotion classification)
+
+### 3. Multi-task Instruction Tuning
+- **Training Details**: 3 epochs, AdamW optimizer, DeepSpeed, A100 GPUs
+- **Models Tuned**:
+  - **EmoLLaMA**: 7B / chat-7B / chat-13B
+  - **EmoOPT**: OPT-13B base
+  - **EmoBLOOM**: BLOOM-7B base
+  - **EmoBART**: BART base
+  - **EmoT5**: T5 base
+
+### 4. Affective Evaluation Benchmark (AEB)
+- **Details**: 8 regression tasks, 6 classification tasks, 14 datasets
+- **Components**:
+  - **AEB-1** (Training effectiveness test): Same domain as AAID
+  - **AEB-2** (Generalization test): Cross-domain datasets
+
+### 5. Comparison Baselines
+- **PLMs** (Pre-trained Language Models): BERT, RoBERTa, SentiBERT
+- **Zero/few-shot LLMs** (Large Language Models): ChatGPT, GPT-4, LLaMA2, Vicuna, Falcon
+- **SA tools** (Sentiment Analysis tools): VADER, TextBlob, rule-based tools
+
+## Architecture Diagram
+
+![EmoLLMs Architecture](images/architecture-diagram.png)
+
+*Figure: Comprehensive pipeline showing data flow from SemEval-2018 raw data through AAID instruction dataset, multi-task instruction tuning, Affective Evaluation Benchmark (AEB), and comparison with baseline models.*
+
 ### 2. Prompt Engineering Criticality
 - Precise task descriptions are essential for accurate outputs
 - Consistent formatting improves model reliability
