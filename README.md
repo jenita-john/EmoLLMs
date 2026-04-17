@@ -146,7 +146,7 @@ The EmoLLMs system follows a comprehensive pipeline for affective analysis:
 
 ## Architecture Diagram
 
-![EmoLLMs Architecture](images/architecture-diagram.png)
+![EmoLLMs Architecture](images/EmoLLMs_architecture.jpg)
 
 *Figure: Comprehensive pipeline showing data flow from SemEval-2018 raw data through AAID instruction dataset, multi-task instruction tuning, Affective Evaluation Benchmark (AEB), and comparison with baseline models.*
 
