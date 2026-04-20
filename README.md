@@ -46,8 +46,7 @@ EmoLLMs-jjohnpau/
 
 ### Key Dependencies
 ```python
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
 ```
 
 ## Experimental Results
@@ -218,7 +217,7 @@ def run_task(prompt):
 ### Model Loading
 ```python
 tokenizer = AutoTokenizer.from_pretrained('lzw1008/Emot5-large')
-model = AutoModelForSeq2SeqLM.from_pretrained('lzw1008/Emot5-large', device_map='auto')
+model = AutoModelForCausalLM.from_pretrained('lzw1008/Emot5-large', device_map='auto')
 ```
 
 ## Challenges and Solutions
@@ -259,7 +258,7 @@ model = AutoModelForSeq2SeqLM.from_pretrained('lzw1008/Emot5-large', device_map=
 ```bash
 # Clone the repository
 git clone [repository-url]
-cd EmoLLMs-jjohnpau
+cd EmoLLMs
 
 # Install dependencies
 pip install transformers torch tqdm pandas
